@@ -19,13 +19,16 @@ Animals and their products are hidden in this field, and you can view each squar
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 11 42 PM" src="https://user-images.githubusercontent.com/54746341/182039493-cb8b0a5f-a0e2-4dd4-a00d-e821acee0e75.png">
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 19 17 PM" src="https://user-images.githubusercontent.com/54746341/182039495-16c798e2-c8e6-42f6-84ac-acd7ca547382.png">
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 46 49 PM" src="https://user-images.githubusercontent.com/54746341/182039805-9b105c3f-e474-4810-bf95-8b707a939fd7.png">
-
+<img width="1112" alt="Screen Shot 2022-07-31 at 8 17 41 PM" src="https://user-images.githubusercontent.com/54746341/182039898-9a57567f-4fc6-4347-9d29-c3d9a27878d2.png">
 
 You can collect these products by left clicking them, and they will be stored in the storage. after collecting them, you can load them into the truck and send the truck to the market whenever you want. By sending the truck, you are selling the products and will receive coins when the truck comes back:
 
 
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 13 48 PM" src="https://user-images.githubusercontent.com/54746341/182039722-b25aeb9d-6c39-46f5-b13b-27d996b326cf.png">
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 14 32 PM" src="https://user-images.githubusercontent.com/54746341/182039725-cedc0a56-6d63-4a13-9fe2-d138682b5e50.png">
+
+
+
 
 
 
