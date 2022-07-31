@@ -1,0 +1,4 @@
+.backGround{
+    -fx-background-image: url("assets/Ground.png");
+    -fx-background-size: cover;
+}

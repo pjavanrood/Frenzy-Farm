@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="478.0" styleClass="backGround" stylesheets="@alertBoxBackGround.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AlertBox">
+   <center>
+      <Label fx:id="messagelabel" text="Helllooo" textFill="#f7611b" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Pixeboy" size="36.0" />
+         </font>
+      </Label>
+   </center>
+   <top>
+      <Region prefHeight="32.0" prefWidth="478.0" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Region prefHeight="76.0" prefWidth="478.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <Button fx:id="OKbutton" mnemonicParsing="false" onAction="#okButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" prefHeight="39.0" prefWidth="63.0" style="-fx-background-color: #000000;" styleClass="backGround" stylesheets="@OKbuttonBackGround.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

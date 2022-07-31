@@ -1,0 +1,4 @@
+.backGround{
+    -fx-background-image: url("assets/ItemsView.png");
+    -fx-background-size: cover;
+}

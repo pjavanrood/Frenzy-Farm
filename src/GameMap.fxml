@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="723.0" maxWidth="1000.0" minHeight="723.0" minWidth="1000.0" prefHeight="723.0" prefWidth="1000.0" styleClass="backGround" stylesheets="@PanelsBackground.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameMapController">
+   <center>
+      <GridPane fx:id="mainGridPane" maxWidth="1064.0" minHeight="661.0" minWidth="624.0" prefHeight="661.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </center>
+   <top>
+      <GridPane prefHeight="68.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="74.0" prefWidth="237.0" styleClass="backGround" stylesheets="@CommandsBackground.css">
+               <center>
+                  <ImageView fitHeight="44.0" fitWidth="126.0" onMouseClicked="#displayMenu" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Menu.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="backGround" stylesheets="@CommandsBackground.css" GridPane.columnIndex="1">
+               <center>
+                  <ImageView fitHeight="57.0" fitWidth="162.0" onMouseClicked="#displayLevels" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Level.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="backGround" stylesheets="@CommandsBackground.css" GridPane.columnIndex="2">
+               <center>
+                  <ImageView fitHeight="78.0" fitWidth="157.0" onMouseClicked="#displayTasks" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Tasks.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="backGround" stylesheets="@CommandsBackground.css" GridPane.columnIndex="3">
+               <center>
+                  <ImageView fitHeight="57.0" fitWidth="136.0" onMouseClicked="#turnCommand" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Turn.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </top>
+   <left>
+      <GridPane prefHeight="665.0" prefWidth="188.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="190.0" prefWidth="188.0">
+               <center>
+                  <ImageView fx:id="well" fitHeight="122.0" fitWidth="108.0" onMouseClicked="#fillWell" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Buildings%20&amp;%20Truck/Well.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <center>
+                  <ImageView fx:id="storage" fitHeight="95.0" fitWidth="173.0" onMouseClicked="#displayStorage" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Buildings%20&amp;%20Truck/Warehouse.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <center>
+                  <ImageView fx:id="shop" fitHeight="123.0" fitWidth="164.0" onMouseClicked="#displayShop" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Buildings%20&amp;%20Truck/Shop.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <center>
+                  <ImageView fx:id="truck" fitHeight="130.0" fitWidth="172.0" onMouseClicked="#displayTruck" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/Buildings%20&amp;%20Truck/Truck.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <GridPane fx:id="factoriesGridPane" prefWidth="188.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </right>
+</BorderPane>

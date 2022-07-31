@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1000.0" styleClass="backGround" stylesheets="@LevelBackground.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LevelPage">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fx:id="levelsLogo" fitHeight="168.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@level Assets/Levels.png" />
+               </image>
+            </ImageView>
+         </center>
+         <right>
+            <Region prefHeight="200.0" prefWidth="70.0" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <BorderPane BorderPane.alignment="CENTER">
+               <center>
+                  <ImageView fx:id="returnIcon" fitHeight="113.0" fitWidth="70.0" onMouseClicked="#returnClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@level Assets/return.png" />
+                     </image>
+                  </ImageView>
+               </center>
+               <left>
+                  <Region prefHeight="200.0" prefWidth="23.0" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </left>
+      </BorderPane>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <ImageView fx:id="levelOneImage" fitHeight="150.0" fitWidth="100.0" onMouseClicked="#levelOneClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../level Assets/1.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <center>
+                  <ImageView fx:id="levelTwoImage" fitHeight="123.0" fitWidth="100.0" onMouseClicked="#levelTwoClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../level Assets/2.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <center>
+                  <ImageView fx:id="levelThreeImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#levelThreeClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../level Assets/3.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <center>
+                  <ImageView fx:id="levelFourImage" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#levelFourClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../level Assets/4.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

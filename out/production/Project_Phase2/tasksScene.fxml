@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="478.0" styleClass="backGround" stylesheets="@alertBoxBackGround.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AlertBox">
+   <center>
+      <Label fx:id="messagelabel" text="hi" textFill="#f7611b" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Pixeboy" size="36.0" />
+         </font>
+      </Label>
+   </center>
+   <top>
+      <Region prefHeight="32.0" prefWidth="478.0" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Region prefHeight="76.0" prefWidth="478.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <ImageView fitHeight="52.0" fitWidth="110.0" onMouseClicked="#okButtonClicked" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@assets/OK.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

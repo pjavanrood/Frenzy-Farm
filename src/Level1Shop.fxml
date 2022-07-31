@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #540000;" styleClass="backGround" stylesheets="@shopBackground.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShopController1">
+   <top>
+      <ImageView fitHeight="68.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@assets/shop.png" />
+         </image>
+      </ImageView>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;">
+               <center>
+                  <ImageView fx:id="henbutton" fitHeight="99.0" fitWidth="122.0" onMouseClicked="#buyHen" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Hen Right.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="1">
+               <center>
+                  <ImageView fx:id="millbutton" fitHeight="100.0" fitWidth="108.0" onMouseClicked="#buildMill" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Mill.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="102.0" prefWidth="150.0" style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="2">
+               <center>
+                  <ImageView fitHeight="102.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/black and white dairy.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="3">
+               <center>
+                  <ImageView fitHeight="129.0" fitWidth="120.0" onMouseClicked="#buyDog" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Dog Right.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.rowIndex="1">
+               <center>
+                  <ImageView fitHeight="98.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/black and white turkey.png" />
+                     </image>
+                  </ImageView>
+               </center>
+               <left>
+                  <Region prefHeight="105.0" prefWidth="9.0" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+            <BorderPane prefHeight="120.0" prefWidth="150.0" style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <center>
+                  <ImageView fitHeight="89.0" fitWidth="63.0" onMouseClicked="#buildBakery" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Bakery.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <center>
+                  <ImageView fitHeight="86.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/black and white tailor shop.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="103.0" prefWidth="150.0" style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <center>
+                  <ImageView fitHeight="102.0" fitWidth="148.0" onMouseClicked="#buyCat" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Cat Right.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.rowIndex="2">
+               <center>
+                  <ImageView fitHeight="117.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/black and white cow.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <center>
+                  <ImageView fitHeight="109.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/black and white clothes shop.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <center>
+                  <ImageView fitHeight="111.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/black and white ice cream shop.png" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane style="-fx-border-color: #960202; -fx-border-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

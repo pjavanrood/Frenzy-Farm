@@ -1,0 +1,4 @@
+1 5000 200 6000 10 egg 4 flour 2 bread 1 turn 25 50
+2 10000 300 20000 7 feather 4 cloth 3 turn 20 50
+3 10000 400 30000 7 milk 4 pasteurizedmilk 2 turn 25 50
+4 15000 500 30000 15 milk 10 icecream 5 turn 30 100

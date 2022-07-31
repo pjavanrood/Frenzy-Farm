@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1000.0" styleClass="backGround" stylesheets="@Background.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginMenu">
+   <left>
+      <BorderPane prefHeight="492.0" prefWidth="567.0" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="393.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@assets/Logo.png" />
+               </image>
+            </ImageView>
+         </center>
+         <left>
+            <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </left>
+   <bottom>
+      <BorderPane prefHeight="173.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <left>
+            <Region prefHeight="141.0" prefWidth="253.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="usernameinput" prefHeight="27.0" prefWidth="265.0" promptText="Username" style="-fx-padding: 10;" styleClass="backGround" stylesheets="@UsernameBackground.css" />
+                        <PasswordField fx:id="passwordinput" promptText="Password" style="-fx-padding: 10;" styleClass="backGround" stylesheets="@UsernameBackground.css" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </center>
+               <right>
+                  <BorderPane prefHeight="141.0" prefWidth="282.0" BorderPane.alignment="CENTER">
+                     <left>
+                        <Region prefHeight="141.0" prefWidth="22.0" BorderPane.alignment="CENTER" />
+                     </left>
+                     <center>
+                        <GridPane BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fx:id="loginbutton" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleLogin" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/log in.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="signupbutton" fitHeight="81.0" fitWidth="242.0" onMouseClicked="#handleSignup" onMouseEntered="#glowButton" onMouseExited="#unGlowButton" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@assets/sign up.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </right>
+            </BorderPane>
+         </center>
+         <bottom>
+            <Region prefHeight="0.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </bottom>
+</BorderPane>

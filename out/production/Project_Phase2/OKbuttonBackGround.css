@@ -1,0 +1,4 @@
+.backGround{
+    -fx-background-image: url("../Assets/OK.png");
+    -fx-background-size: cover;
+}
