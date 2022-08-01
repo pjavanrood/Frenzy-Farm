@@ -4,7 +4,7 @@ This project is a simple implementation of the popular video game, Frenzy Farm, 
 I quite enjoyed creating this software, because it was very challenging in terms of object-oriented concepts. I created numerous classes which inherit from each other and share some attributes and methods. 
 For the GUI, I used the JavaFX library and the SceneBuilder to create XML files.
 Something interesting that I enjoyed making, is a function that I called glowButton. I used this function to create an effect of glowing, when mouse is moved on some images.
-Special thanks to my friend Hooman for helping me in this project.
+Special thanks to my friend Hoomaan for helping me in this project.
 Here are some screenhots from the game.
 Log in menu:
 <img width="1112" alt="Screen Shot 2022-07-29 at 12 44 55 PM" src="https://user-images.githubusercontent.com/54746341/182038858-789b1c89-e537-4467-9267-5725412ed940.png">
