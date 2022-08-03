@@ -28,11 +28,7 @@ You can collect these products by left clicking them, and they will be stored in
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 13 48 PM" src="https://user-images.githubusercontent.com/54746341/182039722-b25aeb9d-6c39-46f5-b13b-27d996b326cf.png">
 <img width="1112" alt="Screen Shot 2022-07-29 at 1 14 32 PM" src="https://user-images.githubusercontent.com/54746341/182039725-cedc0a56-6d63-4a13-9fe2-d138682b5e50.png">
 
-
-
-
-
-
+Credits to my friend Hoomaan for helping me with this project.
 
 
 
